@@ -1,0 +1,411 @@
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+  }
+  
+  body {
+    line-height: 1.4;
+  }
+  
+  .tag {
+    display:grid;
+    grid-gap:14px;
+  }
+  .main-content {
+    position: relative;
+    top: 4.75rem; 
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  } 
+  
+  .img-container {
+    padding: 2rem 1.5rem;
+  }
+  
+  .img-container img {
+    display: block;
+    max-width: 100%;
+  }
+   
+  h1 {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0.5rem 0.5rem;
+  }
+  
+  p {
+    font-weight: 300;
+  
+  }
+  
+  .primary-info {
+    width: 60%;
+    height: auto;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-flow: column wrap;
+  }
+  
+  .primary-info img {
+    height: auto;
+  }
+  
+  .aside {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+  }
+  
+  .aside img {
+    height: auto;
+    max-width: 35%;
+    padding: 1rem 1rem;
+  }
+  .aside figcaption {
+    width: 65%;
+  }
+  .title {
+    padding: 2rem;
+    text-align: center;
+  }
+  .information {
+    padding: 0 1.5rem;
+  }
+
+  .fig-info1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: grey;
+  }
+
+  .fig-info2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  
+  @media only screen and (max-width: 780px) {
+    .main-content {
+      top: 2rem;
+      overflow: hidden;
+    }
+  
+  }
+  
+  header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 4rem;
+    background-color: #fff;
+    padding: 0.5rem 1.5rem;
+  }
+  .menu {
+    padding: 0.5rem 0.5rem;
+    display:grid;
+    grid-gap: 19px;;
+  }
+  nav {
+    font-family: 'Libre Baskerville', serif;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    height: 2rem;
+    font-size: 1.5rem;
+    color: #2C2B30;
+  }
+  
+  .logo img {
+    height: 2.5rem;
+  }
+  
+  .compname-1 {
+    font-weight: 900;
+  }
+  
+  .compname-2 {
+    font-weight: 300;
+    color:grey;
+  }
+  .desktop-menu {
+    padding-right: 1rem;
+  }
+  
+  .mobile-menu {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 780px) {
+    .desktop-menu {
+      display: none;
+    }
+  
+    .logo {
+      display: none;
+    }
+  
+    .menu {
+      width: 100%;
+      height: 4rem;
+
+    }
+  
+    .mobile-menu {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 1rem 1rem;
+    }
+  }
+  
+  
+  .banner {
+    background-color: rgba(218, 216, 209, 0.75); 
+  }
+  
+  .banner h1, .banner h3{
+    padding: 2.5rem 0;
+  }
+  
+  button {
+    margin: auto 0;
+    width: 80%;
+    height: 2.5rem;
+    font-size: 1.25rem;
+    background-color: darkslategrey;
+    color: #DAD8D1;
+    font-weight: 400;
+  }
+  
+  
+  @media only screen and (max-width: 780px) {
+    .banner {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+    }
+  
+    .img-container {
+      width: 100%;
+    }
+    .aside {
+      width: 90%;
+      padding: 2rem 1rem;
+    }
+    
+    .headline h1 {
+      padding-bottom: 2rem;
+    }
+    .headline h3 {
+      padding-bottom: 1.5rem;
+    }
+  
+  }
+  
+
+  .desktop-info a, .mobile-info a {
+    color: #3366BB;
+  }
+  .mobile-info {
+    display: none;
+  }
+  
+  .information  h2 {
+    padding-bottom: 1.5rem;
+  }
+  
+  .desktop-info figure {
+    margin-bottom: 0.5rem;
+  }
+  
+  .desktop-info figcaption > * {
+    padding-bottom: 0.5rem;
+  }
+  
+
+  
+  @media only screen and (max-width: 780px) {
+    .desktop-info {
+      display: none;
+    }
+  
+    .mobile-info {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+    }
+  
+    .mobile-info figure {
+      display: flex;
+      flex-flow: column wrap;
+      width: 90%;
+      height: 45%;
+      margin: 0 auto;
+      overflow: hidden;
+      padding: 1rem 1rem;
+    }
+  
+    .mobile-info figcaption {
+      padding-left: 1rem;
+      padding-bottom: 2rem;
+    }
+  
+  }
+  
+  .courses {
+    background-color:lightgrey;
+    padding: 2rem 2.5rem;
+  }
+  
+  .course-container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center; 
+  }
+  
+  .course-container figure {
+    margin: 2rem 2rem;
+    border: 1px solid #fff;
+    overflow: hidden;
+    width: 50%;
+    height: 22rem;
+  }
+  
+  .course-container figure img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+  }
+  .course-container h3{
+    padding-left: 0.5rem;
+  }
+  .course-container figcaption {
+    padding: 1rem 1rem 1.5rem 1rem;
+    background-color: #fff;
+    height: 100%;
+  
+  }
+  
+  @media only screen and (max-width: 780px) {
+    .courses {
+      padding: 2rem 0; 
+    }
+  
+    .title {
+      padding: 2rem 1rem;
+    }
+  
+    .course-container .flex {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;  
+    }
+    .course-row {
+      width: 90%;
+    }
+    .course-row figure {
+      margin: 0 0 0.5rem 0;
+      width: 100%;
+      height: auto;
+    }
+  
+    .course-row figure img {
+      display: none;
+    }
+  
+    .course-row figcaption h4 {
+      display: none;
+    }
+  
+  }
+  
+  video {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto auto;
+  }
+
+  .video-container {
+    width:80%;
+    margin: 24px;
+    padding: 32px;
+  }
+  
+  .information {
+    display:flex;
+    flex-direction: column;
+    padding-top: 24px;
+    padding-bottom: 0.5rem;
+  }
+  
+  @media only screen and (max-width: 780px) {
+  
+    .information {
+      display: none;
+    }
+  
+    .thesis-content .primary-info {
+      width: 100%;
+    }
+    .thesis-content .aside {
+      display: none;
+    }
+  
+    .video-container {
+      width:60%;
+      margin: 24px;
+      padding: 32px;
+    }
+  }
+  
+  .footer {
+    border-top: 1px solid grey;
+    padding: 1rem 1.5rem;
+  }
+  
+  .footer-info span {
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    padding-right: rem;
+  }
+  
+  @media only screen and (max-width: 780px) {
+    .footer {
+      justify-content: center;
+    }
+    .footer-info {
+      display: none;
+    }
+  }
+
+figcaption {
+  display : start;
+  text-align: flex-start;
+}
